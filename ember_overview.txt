@@ -1,4 +1,4 @@
-Ember.js is one of the newer client-side frameworks available, and has some
+Ember.js is one of the newer client-side frameworks available, and has some broad
 similarities to Angular.js. Ember and Angular both follow an MVC framework, and
 both make use of bidirectional data binding, which ensures that any changes to a
 model are automatically reflected in the view, and any change to the view
@@ -35,10 +35,10 @@ reflects any change that is made to length or width. Angular, however, does not
 have computed properties, and can only approximate them using functions. The
 problem with functions is that they are much slower, and Angular will execute
 the code in the function every time the associated template needs to be updated.
-It has no way of knowing if, for example, an 'area' function needs to be re-run
-because length or width have changed. This can create a serious performance
-issue if a function is called several hundred times, or does a very complex
-calculation.
+It has no way of knowing if, for example, an 'area' function needs to be
+specifically re-run because length or width have changed. This can create a
+serious performance issue if a function is called several hundred times, or if
+it performs a very complex calculation.
 
 For these reasons among others, Ember seems to be gaining popularity among
 developers. Some well-know apps developed with Ember are LivingSocial, Groupon
