@@ -1,0 +1,48 @@
+Ember.js is one of the newer client-side frameworks available, and has some
+similarities to Angular.js. Ember and Angular both follow an MVC framework, and
+both make use of bidirectional data binding, which ensures that any changes to a
+model are automatically reflected in the view, and any change to the view
+automatically updates the model. However, Ember has a larger library than
+Angular, and because of this additional functionality, is sometimes argued to be
+preferable for more complex, long-term projects. Some developers also prefer
+Ember because it doesn't deviate as much from traditional Javascript patterns
+and syntax, and doesn't violate the philosophy of 'unobtrusive' Javascript.
+Angular, by contrast, is not unobtrusive, as it often mixes functionality with
+the structure and presentation of an application in its use of templates. Ember
+templates also differ from Angular templates in that they make use of the
+Handlebars templating engine, while Angular uses HTML with no separate
+templating engine.
+
+A few of Ember's additional pieces of functionality offer notable benefits over
+Angular. For example, Ember follows the 'uniform access principle', which
+essentially means that the expressions for both functions and primitives look
+the same in templates. By contrast, Angular requires that functions always be
+explicitly noted with (). While this seems minor, this can present issues with
+maintainability when using Angular. If at some point a literal needs to be
+changed to a function, this would have to be updated in every template that the
+literal appears in, which can be no small task in a complex application.
+
+Another interesting piece of functionality that Ember makes available is the
+concept of a computed property, which calculates the value of a property based
+on the values of some set of other properties. The key thing to note is that the
+dependency on other properties is explicitly declared for a given computed
+property, and thus the computed property will be automatically updated if its
+dependent properties change. In this way, a developer can ensure that these
+values are never out of sync with one another. For example, if you have a
+computed property of 'area', you can explicitly note that this property is
+dependent on 'length' and 'width' in order to make sure that area always
+reflects any change that is made to length or width. Angular, however, does not
+have computed properties, and can only approximate them using functions. The
+problem with functions is that they are much slower, and Angular will execute
+the code in the function every time the associated template needs to be updated.
+It has no way of knowing if, for example, an 'area' function needs to be re-run
+because length or width have changed. This can create a serious performance
+issue if a function is called several hundred times, or does a very complex
+calculation.
+
+For these reasons among others, Ember seems to be gaining popularity among
+developers. Some well-know apps developed with Ember are LivingSocial, Groupon
+and Square. Additionally, there seem to be fairly straightforward ways to
+integrate Ember with Rails, including the ember-rails gem
+(https://github.com/emberjs/ember-rails), which can be added to an existing
+Rails application.
