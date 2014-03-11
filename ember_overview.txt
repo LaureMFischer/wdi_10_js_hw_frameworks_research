@@ -41,7 +41,7 @@ serious performance issue if a function is called several hundred times, or if
 it performs a very complex calculation.
 
 For these reasons among others, Ember seems to be gaining popularity among
-developers. Some well-know apps developed with Ember are LivingSocial, Groupon
+developers. Some well-known apps developed with Ember are LivingSocial, Groupon
 and Square. Additionally, there seem to be fairly straightforward ways to
 integrate Ember with Rails, including the ember-rails gem
 (https://github.com/emberjs/ember-rails), which can be added to an existing
